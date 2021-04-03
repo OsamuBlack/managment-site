@@ -19,6 +19,11 @@
             width: 37%;
         }
 
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
+
         &__medium-8 {
             float: left;
             width: 66.66%;    
@@ -31,7 +36,16 @@
         margin-right: -65px;
     }
 
+    &--margin-large {
+        margin-right: -100px;
+    }
+
     &--margins > div {
         padding-right: 65px;
+    }
+    &--margins-large > div {
+        @mixin atSmall {
+            padding-right: 100px;
+        }
     }
 }
