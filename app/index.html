@@ -10,24 +10,33 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/images/icons/clear-view-escapes.svg">
-        <a href="#" class="btn">Get in Touch</a>
-        <nav>
-            <ul>
-                <li><a href="#our-beginning">Our Beginning</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="wrapper">
+            <div class="site-header__logo">
+                <img src="assets/images/icons/clear-view-escapes.svg">
+            </div>
+            <div class="site-header__menu-icon"></div>
+            <div class="site-header__menu-header">
+                <div class="site-header__btn-right">
+                    <a href="#" class="btn">Get in Touch</a>
+                </div>
+                <nav class="inline-nav inline-nav--pull-right">
+                    <ul>
+                        <li><a href="#our-beginning">Our Beginning</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <div class="large-hero">
-        <picture>
+        <picture class="large-hero__image">
             <source srcset="assets/images/hero--large-i-i.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width:1380px)" alt="Costal view of ocean and beach.">
             <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width:990px)" alt="Costal view of ocean and beach.">
             <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width:640px)" alt="Costal view of ocean and beach.">
-            <img srcset="assets/images/hero--smaller.jpg 640w, assets\images\hero--smaller-hi-dpi.jpg 1280w" alt="Costal view of ocean and beach." class="large-hero__image">
+            <img srcset="assets/images/hero--smaller.jpg 640w, assets\images\hero--smaller-hi-dpi.jpg 1280w" alt="Costal view of ocean and beach.">
         </picture>
         <div class="large-hero__text-content">
             <h1 class="large-hero__title">Your clarity.</h1>
@@ -103,7 +112,7 @@
         <div class="wrapper wrapper--no-padding-untill-large">
             <h2 class="section-title section-title--blue"><img class="section-title__icon
             " src="assets/images/icons/comment.svg"> Real <strong>Testimonials</strong></h2>
-            <div class="row generic-content-container row--t-padding row--margins row--margin-small row--equal-height-at-large">
+            <div class="row generic-content-container row--t-padding row--margins row--margins-small row--equal-height-at-large">
                 <div class="row__large-4">
                     <div class="testimonial">
                         <div class="testimonial__photo"><img sizes="160px" srcset="assets/images/testimonial-jane-i.jpg 160w, assets/images/testimonial-jane-hi-dpi-i.jpg 320w" alt="Jane Doe"></div>
